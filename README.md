@@ -14,10 +14,10 @@ My weather sites: http://weather.lakewebster.com/ & http://weather.sanfordshores
 Or download the zip file into your weather site's root directory and extract the contents into a new directory named `/saratoga-rounded-corners/`.
 
 2) Edit `top.php` in the root directory of your weather site and find the following lines:
-
+```html
     <link rel="stylesheet" type="text/css" href="<?php echo $SITE['CSSscreen']; ?>" media="screen" title="screen" />
     <link rel="stylesheet" type="text/css" href="<?php echo $SITE['CSSprint']; ?>" media="print" />
-
+```
 Add the following line immediately **BELOW** those two lines:
 
     <link rel="stylesheet" type="text/css" href="/saratoga-rounded-corners/rounded.css" media="screen" title="screen" />
